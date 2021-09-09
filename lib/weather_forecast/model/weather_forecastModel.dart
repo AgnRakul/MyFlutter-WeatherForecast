@@ -88,8 +88,8 @@ class WeatherForecastModel {
 }
 
 class Coord {
-  late double lon;
-  late double lat;
+  late var lon;
+  late var lat;
 
   Coord({required this.lon, required this.lat});
 
@@ -173,8 +173,8 @@ class Main {
 }
 
 class Wind {
-  late double speed;
-  late int deg;
+  late var speed;
+  late var deg;
 
   Wind({required this.speed, required this.deg});
 
@@ -208,11 +208,11 @@ class Clouds {
 }
 
 class Sys {
-  late int type;
-  late int id;
-  late String country;
-  late int sunrise;
-  late int sunset;
+  late var type;
+  late var id;
+  late var country;
+  late var sunrise;
+  late var sunset;
 
   Sys(
       {required this.type,

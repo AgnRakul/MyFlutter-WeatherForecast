@@ -1,3 +1,15 @@
+import 'package:intl/intl.dart';
+
 class Util {
-  static String appId = "108db658347c820baa5bd7f6a0623bef";
+  static String appId = "";
+
+// To Format the date
+  static String getFormattedDate(DateTime dateTime) {
+    return new DateFormat("EEE, MMM d, y").format(dateTime);
+  }
+
+// Sunrise and Sunset
+  static String getFormattedTime(DateTime dateTime) {
+    return new DateFormat("K:mm a").format(dateTime);
+  }
 }
